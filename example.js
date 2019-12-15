@@ -9,9 +9,22 @@ var bar = 'hello'
 
 // now, we can use the hastebin varible to post something..
 
-    hastebin().then(post => { // requiring the post so we can retrive a link
+    hastebin('hello').then(post => { // requiring the post so we can retrive a link
         console.log(post); // this will log the link
     });
 
 // now if we run the code.. 
-// we'll get https://hasteb.in/nanidoze.js. That will contain our code.
+// we'll get our hasteb.in link. That will contain our code.
+
+// Lets say we want a different extenstion...
+
+    hastebin('hello', { extension: "txt" }).then(post => { // requiring post again to retrive a link. if there is no extension, its automatically JavaScript.
+        console.log(post); // log it into the console so we can get the code.
+    });
+
+// or, you can use async await...
+
+    async function() { // has to be aysnc to use 'await'
+     const haste = await hastebin('hello', { extension: "js" }); // looks better
+       console.log(haste); // log it into the console for grabs
+    };
