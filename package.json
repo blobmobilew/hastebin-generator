@@ -1,0 +1,23 @@
+{
+  "name": "hastebin-generator-improved",
+  "version": "1.0.0",
+  "description": "a better version of hastebin-gen",
+  "main": "src/client.js",
+  "types": "typings/index.d.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "?"
+  },
+  "keywords": [
+    "node",
+    "hastebin"
+  ],
+  "author": "samurai",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
